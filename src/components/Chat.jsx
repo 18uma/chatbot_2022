@@ -10,7 +10,7 @@ const Chat = (props) => {
     const isQuestion = (props.type === 'question')
     const classes = isQuestion ? 'p-chat__raw' : 'p-chat__reverse'
     return (
-        <ListItem >
+        <ListItem className={classes}>
             <ListItemAvatar>
                 {isQuestion ? (
                     <Avatar alt="icon" src={Torahack} />
