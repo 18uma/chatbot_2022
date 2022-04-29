@@ -1,10 +1,22 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-// import Stack from '@mui/material/Stack';
 
 const Answer = (props) => {
     return (
-        <Button variant="contained" onClick={() => props.select(props.content, props.nextId)}>
+        <Button
+            sx={{
+                borderColor: '#FFB549',
+                color: '#FFB549',
+                fontWeight: 600,
+                marginBottom: '8px',
+                "&:hover": {
+                    backgroundColor: '#FFB549',
+                    color: '#fff'
+                }
+            }}
+            variant="outlined"
+            onClick={() => props.select(props.content, props.nextId)}
+        >
             {props.content}
         </Button>
     )
